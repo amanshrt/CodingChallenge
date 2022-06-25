@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "marginTop": 32,
+      "paddingHorizontal": 24,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontSize": 24,
+          "fontWeight": "600",
+        },
+        Object {
+          "color": "#000",
+        },
+      ]
+    }
+  >
+    Step One
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontSize": 18,
+          "fontWeight": "400",
+          "marginTop": 8,
+        },
+        Object {
+          "color": "#444",
+        },
+      ]
+    }
+  />
+</View>
+`;
