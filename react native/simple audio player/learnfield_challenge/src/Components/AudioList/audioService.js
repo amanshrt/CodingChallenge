@@ -1,8 +1,14 @@
 
 
 export const selectAudio = (data, navigation) => {
-    navigation.navigate("Detail", {...data})
-  audioAction(data, 'PLAY');
+  try {
+    navigation.navigate("Detail", { ...data })
+    audioAction(data, 'PLAY');
+  return true;
+  }
+  catch (e) { 
+    return false
+  }
 };
 
 export const audioAction = (data, event) => {

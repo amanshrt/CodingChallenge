@@ -24,7 +24,7 @@ const Section = ({ data }) => {
           {data.totalDurationMs + 'ms'}
         </Text>
       </ImageBackground>
-      <Text
+      <Text testID='data-render'
         style={
           (CommonStyles.txt_bl, CommonStyles.txt_lg, CommonStyles.txt_center)
         }>

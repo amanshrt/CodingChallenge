@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignContent": "center",
+      "backgroundColor": "#444",
+      "flex": 1,
+      "flexDirection": "column",
+      "height": 220,
+      "marginBottom": 12,
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      Object {
+        "height": 180,
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": null,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "height": 180,
+            "width": "100%",
+          },
+          undefined,
+        ]
+      }
+    />
+    <BVLinearGradient
+      colors={
+        Array [
+          4278190080,
+          0,
+        ]
+      }
+      endPoint={
+        Object {
+          "x": 0.5,
+          "y": 1,
+        }
+      }
+      locations={null}
+      startPoint={
+        Object {
+          "x": 0.5,
+          "y": 0,
+        }
+      }
+      style={
+        Object {
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "position": "absolute",
+          "right": 10,
+        }
+      }
+    >
+      1ms
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+    testID="data-render"
+  >
+    abc
+  </Text>
+</View>
+`;
