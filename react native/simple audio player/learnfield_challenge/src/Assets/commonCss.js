@@ -1,9 +1,7 @@
 import { StyleSheet } from "react-native";
 import { Colors } from "react-native/Libraries/NewAppScreen";
-console.log(Colors);
 const CommonStyles = StyleSheet.create({
   container: {
-    flex: 1,
     width: '100%',
     backgroundColor: Colors.darker,
     padding: 10,
@@ -49,7 +47,7 @@ const CommonStyles = StyleSheet.create({
     width: '100%',
   },
   largeImage: {
-    height: 400,
+    height: 500,
   },
   linearGradient: {
     height: '100%',

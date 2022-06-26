@@ -13,9 +13,7 @@ import Section from '../Components/AudioList';
 import { Header } from '../Components/Header';
 
 function WelcomeScreen(navigation) {
-  const dispatch = useDispatch();
   const songs = useSelector((state) => state.audio.songs);
-  songs.map((song, index) => { console.log(song) });
   return (
     <ScrollView
       style={CommonStyles.container}

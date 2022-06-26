@@ -14,7 +14,10 @@ function Router() {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="Detail" component={DetailsScreen} />
+        <Stack.Screen
+          name="Detail"
+          component={DetailsScreen}
+        />
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>

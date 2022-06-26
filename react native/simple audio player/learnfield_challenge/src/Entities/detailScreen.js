@@ -1,24 +1,34 @@
 import * as React from 'react';
-import {Text, View, StyleSheet, ScrollView} from 'react-native';
+import {Text, View, StyleSheet, ScrollView, Button} from 'react-native';
 import CommonStyles from '../Assets/commonCss';
-import Section from '../Components/AudioList';
 import { Header } from "./../Components/Header";
 import Player from '../Components/Player';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 function DetailScreen(props) {
-  console.log("hey", props.route.params)
-  const { audio, title,cover , totalDurationMs } = props.route.params;
+  const { title } = props.route.params;
   return (
-    <ScrollView
-      style={CommonStyles.container}
+    <View
+      style={(CommonStyles.container, styles.layout)}
       contentContainerStyle={{justifyContent: 'center'}}>
       <Header />
-      <Text style={CommonStyles.txt_lg, CommonStyles.txt_center}>{title}</Text>
-      <Player data={ props.route.params}/>
-      </ScrollView>
+        <Text style={(CommonStyles.txt_lg, CommonStyles.txt_center)}>
+          {title}
+        </Text>
+        <Player data={props.route.params} />
+      <Button
+        color={Colors.black}
+        title="Back"
+        onPress={() => props.navigation.navigate('Welcome')}></Button>
+    </View>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  layout: {
+    backgroundColor: 'black',
+    flex: 1,
+  }
+});
 
 export default DetailScreen;
